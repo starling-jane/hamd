@@ -1,0 +1,30 @@
+
+
+paragraph object
+Lcontent (array)
+ Lraw strings
+ Llink object
+
+link object
+Lcontent (string)
+Lhref (string)
+
+
+Hamd::MDObject
+Lnew    (init function)
+Lrender (curses render function)
+Ltype   (string)
+
+package Hamd::MDObject;
+use strict;
+
+sub new {
+    ...
+};
+sub render {
+    my ($self, $active, $win, $y, $x, $active, %colors) = @_;
+    ...
+};
+sub type {
+    ...
+};
